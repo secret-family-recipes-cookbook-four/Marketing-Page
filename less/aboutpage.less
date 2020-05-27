@@ -1,0 +1,90 @@
+.contentContainer{
+    width: 100%;
+    max-width: 1100px;
+    margin: auto;
+    margin-top: 150px;
+
+    h2{
+        color: @greenAccent;
+        font-size: 2.2rem;
+        text-shadow: 0px 0px 3px @textColor;
+    }
+
+    .heroImage{
+        background-image: url(/img/italianFood.jpeg);
+        height: 450px;
+        background-position: center;
+        background-size: cover;
+        .flex(flex,column,center,center);
+        margin-top: 5%;
+        box-shadow: 0px 0px 20px 2px @greenAccent;
+        border-radius: 10px;
+
+        h2{
+            font-size: 2.0rem;
+            text-align: center;
+            color: @backgroundColor;
+            text-shadow: 0px 0px 5px @blackAccent;
+            margin-bottom: 1%;
+        }
+
+        p{
+            width: 40%;
+            margin: 0% auto 4%;
+            color: @backgroundColor;
+            font-size: 1.6rem;
+            text-align: center;
+            font-weight: bolder;
+            text-shadow: 0px 0px 5px @greenAccent;
+        }
+
+    }
+
+    .aboutContainer {
+        width: 95%;
+        
+        
+        .person{
+            .flex(flex,row,space-between,center);
+            margin: 10% 0% 10% 0%;
+
+            .personImage{
+                width: 48%;
+                border-radius: 10px;
+                box-shadow: 0px 0px 20px 2px lighten(@textColor,20%);
+            }
+            .personText{
+                width: 55%;
+                padding: 5%;
+            }
+            #personPicOne{
+                background-image: url(/img/familyInGardenByTree.jpeg);
+                height: 350px;
+                background-position: center;
+                background-size: cover;
+                order: 1;
+            }
+            #personPicTwo{
+                background-image: url(/img/womenDrinkingWine.jpeg);
+                height: 350px;
+                background-position: center;
+                background-size: cover;
+                order: 0;
+            }
+            #personPicThree{
+                background-image: url(/img/handsOfFamily.jpeg);
+                height: 350px;
+                background-position: center;
+                background-size: cover;
+                order: 1;
+            }
+            #personPicFour{
+                background-image: url(/img/womanEnjoyingMexican.jpeg);
+                height: 350px;
+                background-position: center;
+                background-size: cover;
+                order: 0;
+            }
+        }
+    }
+}

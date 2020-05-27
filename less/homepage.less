@@ -2,13 +2,24 @@
     width: 100%;
     max-width: 1100px;
     margin: auto;
+    margin-top: 150px;
+
+    h2{
+        color: @greenAccent;
+        font-size: 2.2rem;
+        text-shadow: 0px 0px 3px @textColor;
+    }
 
     .heroImage{
         background-image: url(/img/italianFood.jpeg);
         height: 450px;
         background-position: center;
         background-size: cover;
-        .flex(flex,column,center,center);
+        margin-top: 5%;
+        box-shadow: 0px 0px 20px 2px lighten(@textColor,20%);
+        border-radius: 10px;
+
+        .flex();
 
         p{
             width: 40%;
@@ -18,24 +29,30 @@
             text-align: center;
             font-weight: bolder;
             text-shadow: 0px 0px 10px @greenAccent;
+ 
         }
 
         #heroButton{
-            width: 250px;
+            width: 220px;
             margin: auto;
             font-size: 2.0rem;
-            padding: 2%;
+            padding: 1%;
             .flex(flex,column,center,center);
             border: 3px solid @redTitle;
             border-radius: 12px;
-            box-shadow: 0px 0px 20px 2px @greenAccent;
-            text-shadow: 0px 0px 10px @greenAccent;
+            box-shadow: 0px 0px 15px 2px @textColor;
+            text-shadow: 0px 0px 2px @textColor;
+            background-color: @backgroundColor;
+            opacity: 100%;
+
+            &:hover {
+                background-color: lighten(@backgroundColor, 10%);
+            }
         }
     }
 
     .featuresContainer {
         width: 95%;
-        
         
         .features{
             .flex(flex,row,space-between,center);
@@ -43,9 +60,12 @@
 
             .featureImage{
                 width: 48%;
+                border-radius: 10px;
+                box-shadow: 0px 0px 20px 2px lighten(@textColor,20%);
             }
             .featureText{
                 width: 55%;
+                padding: 5%;
             }
             #featurePicOne{
                 background-image: url(/img/familyInGardenByTree.jpeg);

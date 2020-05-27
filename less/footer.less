@@ -4,10 +4,19 @@ footer{
     .flex(flex,column,center,center);
     margin: auto;
     text-align: center;
+    padding: 2%;
+    box-shadow: 0px 0px 20px 2px lighten(@textColor,20%);
+    border-top: 2px solid @backgroundColor;
 
     a{
         color: @backgroundColor;
         width: 20%;
         margin: auto;
+        padding: 2%;
+        font-size: 1.4rem;
+        text-shadow: 0px 0px 5px @blackAccent;
+        &:hover{
+            text-shadow: 0px 0px 10px @blackAccent;
+        }
     }
 }
