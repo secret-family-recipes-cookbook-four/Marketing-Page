@@ -81,7 +81,7 @@ audio,
 video {
   margin: 0%;
   padding: 0;
-  border: 2px solid red;
+  border: 0;
   font-size: 62.5%;
   font: inherit;
   vertical-align: baseline;
@@ -141,11 +141,16 @@ h2 {
   margin-bottom: 2%;
   padding: 2%;
 }
+h3 {
+  font-size: 1.2rem;
+  padding: 2%;
+}
 p {
   line-height: 1.5;
-  font-size: 1rem;
+  font-size: 1.4rem;
   font-family: 'Montserrat', sans-serif;
   padding: 2%;
+  letter-spacing: 0.25rem;
 }
 a {
   font-family: 'Chelsea Market', cursive;
@@ -231,19 +236,19 @@ header .navContainer nav #navButton:hover {
 }
 footer {
   background-color: #EB5E55;
-  color: #F1F0EE display: flex; flex-direction: column; justify-content: center; align-items: center;;
+  color: #F1F0EE display: flex; flex-direction: row; justify-content: space-around; align-items: center;;
   margin: auto;
   text-align: center;
   padding: 2%;
   box-shadow: 0px 0px 20px 2px #8a797c;
   border-top: 2px solid #F1F0EE;
   max-height: 150px;
-  bottom: 0;
 }
 footer a {
   color: #F1F0EE;
   width: 20%;
   margin: auto;
+  padding: 0% 5%;
   font-size: 1.4rem;
   text-shadow: 0px 0px 5px #220C10;
 }
@@ -258,7 +263,17 @@ footer p {
   width: 90%;
   max-width: 1100px;
   margin: auto;
-  margin-top: 150px;
+  margin-top: 200px;
+}
+@media (max-width:1100px) {
+  .contentContainer {
+    margin-top: 165px;
+  }
+}
+@media (max-width:800px) {
+  .contentContainer {
+    margin-top: 145px;
+  }
 }
 .contentContainer h2 {
   color: #67766D;
@@ -274,8 +289,8 @@ footer p {
   box-shadow: 0px 0px 20px 2px #8a797c;
   border-radius: 10px;
   display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
 }
 .contentContainer .heroImage p {
@@ -330,6 +345,11 @@ footer p {
     align-items: center;
   }
 }
+@media (max-width:800px) {
+  .contentContainer .featuresContainer .features {
+    margin: 20% 0% 20% 0%;
+  }
+}
 .contentContainer .featuresContainer .features .featureImage {
   width: 48%;
   border-radius: 10px;
@@ -337,16 +357,18 @@ footer p {
 }
 @media (max-width:800px) {
   .contentContainer .featuresContainer .features .featureImage {
-    width: 80%;
+    width: 87%;
   }
 }
 .contentContainer .featuresContainer .features .featureText {
-  width: 55%;
+  width: 80%;
   padding: 5%;
 }
 @media (max-width:800px) {
   .contentContainer .featuresContainer .features .featureText {
     width: 100%;
+    padding: 10% 0%;
+    margin-bottom: 0%;
   }
 }
 .contentContainer .featuresContainer .features #featurePicOne {

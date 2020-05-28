@@ -2,7 +2,14 @@
     width: 90%;
     max-width: 1100px;
     margin: auto;
-    margin-top: 150px;
+    margin-top: 200px;
+    @media@tablet {
+        margin-top: 165px;
+    }
+    @media@mobile {
+        margin-top: 145px;
+    }
+
 
     h2{
         color: @greenAccent;
@@ -19,7 +26,7 @@
         box-shadow: 0px 0px 20px 2px lighten(@textColor,20%);
         border-radius: 10px;
 
-        .flex();
+        .flex(flex, column, center, center);
 
         p{
             width: 40%;
@@ -68,19 +75,25 @@
 
             margin: 10% 0% 10% 0%;
 
+            @media@mobile{
+                margin: 20% 0% 20% 0%;
+            }
+
             .featureImage{
                 width: 48%;
                 border-radius: 10px;
                 box-shadow: 0px 0px 20px 2px lighten(@textColor,20%);
                 @media@mobile{
-                    width: 80%;
+                    width: 87%;
                 }
             }
             .featureText{
-                width: 55%;
+                width: 80%;
                 padding: 5%;
                 @media@mobile{
                     width: 100%;
+                    padding: 10% 0%;
+                    margin-bottom: 0%;
                 }
             }
             #featurePicOne{
