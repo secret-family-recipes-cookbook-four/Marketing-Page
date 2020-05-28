@@ -181,6 +181,16 @@ header .navContainer h1 {
   width: 63%;
   text-shadow: 0px 0px 5px #220C10;
 }
+@media (max-width:1100px) {
+  header .navContainer h1 {
+    font-size: 2rem;
+  }
+}
+@media (max-width:800px) {
+  header .navContainer h1 {
+    font-size: 1.8rem;
+  }
+}
 header .navContainer h1 a {
   color: #F1F0EE;
 }
@@ -192,6 +202,16 @@ header .navContainer nav {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+}
+@media (max-width:1100px) {
+  header .navContainer nav {
+    font-size: 1.2rem;
+  }
+}
+@media (max-width:800px) {
+  header .navContainer nav {
+    font-size: 1rem;
+  }
 }
 header .navContainer nav a {
   text-decoration: none;
@@ -254,7 +274,7 @@ footer p {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 5%;
+  margin-top: 0%;
   box-shadow: 0px 0px 20px 2px #67766D;
   border-radius: 10px;
 }
@@ -274,6 +294,11 @@ footer p {
   font-weight: bolder;
   text-shadow: 0px 0px 5px #67766D;
 }
+@media (max-width:1100px) {
+  .contentContainer .heroImage p {
+    width: 70%;
+  }
+}
 .contentContainer .aboutContainer {
   width: 90%;
   margin: auto;
@@ -285,14 +310,32 @@ footer p {
   align-items: center;
   margin: 10% 0% 10% 0%;
 }
+@media (max-width:800px) {
+  .contentContainer .aboutContainer .person {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
 .contentContainer .aboutContainer .person .personImage {
   width: 48%;
   border-radius: 10px;
   box-shadow: 0px 0px 20px 2px #8a797c;
 }
+@media (max-width:800px) {
+  .contentContainer .aboutContainer .person .personImage {
+    width: 80%;
+  }
+}
 .contentContainer .aboutContainer .person .personText {
   width: 55%;
   padding: 5%;
+}
+@media (max-width:800px) {
+  .contentContainer .aboutContainer .person .personText {
+    width: 100%;
+  }
 }
 .contentContainer .aboutContainer .person #personPicOne {
   background-image: url(/img/familyInGardenByTree.jpeg);
@@ -301,12 +344,22 @@ footer p {
   background-size: cover;
   order: 1;
 }
+@media (max-width:800px) {
+  .contentContainer .aboutContainer .person #personPicOne {
+    order: 0;
+  }
+}
 .contentContainer .aboutContainer .person #personPicTwo {
   background-image: url(/img/womenDrinkingWine.jpeg);
   height: 350px;
   background-position: center;
   background-size: cover;
   order: 0;
+}
+@media (max-width:800px) {
+  .contentContainer .aboutContainer .person #personPicTwo {
+    order: 0;
+  }
 }
 .contentContainer .aboutContainer .person #personPicThree {
   background-image: url(/img/handsOfFamily.jpeg);
@@ -315,10 +368,20 @@ footer p {
   background-size: cover;
   order: 1;
 }
+@media (max-width:800px) {
+  .contentContainer .aboutContainer .person #personPicThree {
+    order: 0;
+  }
+}
 .contentContainer .aboutContainer .person #personPicFour {
   background-image: url(/img/womanEnjoyingMexican.jpeg);
   height: 350px;
   background-position: center;
   background-size: cover;
   order: 0;
+}
+@media (max-width:800px) {
+  .contentContainer .aboutContainer .person #personPicFour {
+    order: 0;
+  }
 }

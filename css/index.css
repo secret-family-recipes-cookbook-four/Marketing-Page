@@ -181,6 +181,16 @@ header .navContainer h1 {
   width: 63%;
   text-shadow: 0px 0px 5px #220C10;
 }
+@media (max-width:1100px) {
+  header .navContainer h1 {
+    font-size: 2rem;
+  }
+}
+@media (max-width:800px) {
+  header .navContainer h1 {
+    font-size: 1.8rem;
+  }
+}
 header .navContainer h1 a {
   color: #F1F0EE;
 }
@@ -192,6 +202,16 @@ header .navContainer nav {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+}
+@media (max-width:1100px) {
+  header .navContainer nav {
+    font-size: 1.2rem;
+  }
+}
+@media (max-width:800px) {
+  header .navContainer nav {
+    font-size: 1rem;
+  }
 }
 header .navContainer nav a {
   text-decoration: none;
@@ -250,7 +270,7 @@ footer p {
   height: 450px;
   background-position: center;
   background-size: cover;
-  margin-top: 5%;
+  margin-top: 0%;
   box-shadow: 0px 0px 20px 2px #8a797c;
   border-radius: 10px;
   display: flex;
@@ -266,6 +286,11 @@ footer p {
   text-align: center;
   font-weight: bolder;
   text-shadow: 0px 0px 10px #67766D;
+}
+@media (max-width:1100px) {
+  .contentContainer .heroImage p {
+    width: 70%;
+  }
 }
 .contentContainer .heroImage #heroButton {
   width: 220px;
@@ -297,14 +322,32 @@ footer p {
   align-items: center;
   margin: 10% 0% 10% 0%;
 }
+@media (max-width:800px) {
+  .contentContainer .featuresContainer .features {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
 .contentContainer .featuresContainer .features .featureImage {
   width: 48%;
   border-radius: 10px;
   box-shadow: 0px 0px 20px 2px #8a797c;
 }
+@media (max-width:800px) {
+  .contentContainer .featuresContainer .features .featureImage {
+    width: 80%;
+  }
+}
 .contentContainer .featuresContainer .features .featureText {
   width: 55%;
   padding: 5%;
+}
+@media (max-width:800px) {
+  .contentContainer .featuresContainer .features .featureText {
+    width: 100%;
+  }
 }
 .contentContainer .featuresContainer .features #featurePicOne {
   background-image: url(/img/familyInGardenByTree.jpeg);
@@ -313,6 +356,11 @@ footer p {
   background-size: cover;
   order: 2;
 }
+@media (max-width:800px) {
+  .contentContainer .featuresContainer .features #featurePicOne {
+    order: 0;
+  }
+}
 .contentContainer .featuresContainer .features #featurePicTwo {
   background-image: url(/img/womenDrinkingWine.jpeg);
   height: 350px;
@@ -320,10 +368,20 @@ footer p {
   background-size: cover;
   order: 0;
 }
+@media (max-width:800px) {
+  .contentContainer .featuresContainer .features #featurePicTwo {
+    order: 0;
+  }
+}
 .contentContainer .featuresContainer .features #featurePicThree {
   background-image: url(/img/handsOfFamily.jpeg);
   height: 350px;
   background-position: center;
   background-size: cover;
   order: 2;
+}
+@media (max-width:800px) {
+  .contentContainer .featuresContainer .features #featurePicThree {
+    order: 0;
+  }
 }

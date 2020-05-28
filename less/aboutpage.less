@@ -16,7 +16,7 @@
         background-position: center;
         background-size: cover;
         .flex(flex,column,center,center);
-        margin-top: 5%;
+        margin-top: 0%;
         box-shadow: 0px 0px 20px 2px @greenAccent;
         border-radius: 10px;
 
@@ -36,6 +36,10 @@
             text-align: center;
             font-weight: bolder;
             text-shadow: 0px 0px 5px @greenAccent;
+
+            @media@tablet {
+                width: 70%;
+            }
         }
 
     }
@@ -46,16 +50,26 @@
         
         .person{
             .flex(flex,row,space-between,center);
+            @media@mobile {
+                .flex(flex,column,center,center);
+            }
+
             margin: 10% 0% 10% 0%;
 
             .personImage{
                 width: 48%;
                 border-radius: 10px;
                 box-shadow: 0px 0px 20px 2px lighten(@textColor,20%);
+                @media@mobile{
+                    width: 80%;
+                }
             }
             .personText{
                 width: 55%;
                 padding: 5%;
+                @media@mobile{
+                    width: 100%;
+                }
             }
             #personPicOne{
                 background-image: url(/img/familyInGardenByTree.jpeg);
@@ -63,6 +77,10 @@
                 background-position: center;
                 background-size: cover;
                 order: 1;
+
+                @media@mobile {
+                    order: 0;
+                }
             }
             #personPicTwo{
                 background-image: url(/img/womenDrinkingWine.jpeg);
@@ -70,6 +88,10 @@
                 background-position: center;
                 background-size: cover;
                 order: 0;
+
+                @media@mobile {
+                    order: 0;
+                }
             }
             #personPicThree{
                 background-image: url(/img/handsOfFamily.jpeg);
@@ -77,6 +99,10 @@
                 background-position: center;
                 background-size: cover;
                 order: 1;
+
+                @media@mobile {
+                    order: 0;
+                }
             }
             #personPicFour{
                 background-image: url(/img/womanEnjoyingMexican.jpeg);
@@ -84,6 +110,10 @@
                 background-position: center;
                 background-size: cover;
                 order: 0;
+
+                @media@mobile {
+                    order: 0;
+                }
             }
         }
     }
