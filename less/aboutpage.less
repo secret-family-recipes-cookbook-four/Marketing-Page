@@ -2,7 +2,13 @@
     width: 90%;
     max-width: 1100px;
     margin: auto;
-    margin-top: 150px;
+    margin-top: 200px;
+    @media@tablet {
+        margin-top: 165px;
+    }
+    @media@mobile {
+        margin-top: 145px;
+    }
 
     h2{
         color: @greenAccent;
@@ -16,15 +22,15 @@
         background-position: center;
         background-size: cover;
         .flex(flex,column,center,center);
-        margin-top: 5%;
-        box-shadow: 0px 0px 20px 2px @greenAccent;
+        margin-top: 0%;
+        box-shadow: 0px 0px 20px 2px @textColor;
         border-radius: 10px;
 
         h2{
             font-size: 2.0rem;
             text-align: center;
             color: @backgroundColor;
-            text-shadow: 0px 0px 5px @blackAccent;
+            text-shadow: 0px 0px 5px @greenAccent;
             margin-bottom: 1%;
         }
 
@@ -35,7 +41,11 @@
             font-size: 1.6rem;
             text-align: center;
             font-weight: bolder;
-            text-shadow: 0px 0px 5px @greenAccent;
+            text-shadow: 0px 0px 10px @greenAccent;
+
+            @media@tablet {
+                width: 70%;
+            }
         }
 
     }
@@ -46,44 +56,76 @@
         
         .person{
             .flex(flex,row,space-between,center);
+            @media@mobile {
+                .flex(flex,column,center,center);
+            }
+
             margin: 10% 0% 10% 0%;
+
+            @media@mobile{
+                margin: 20% 0% 20% 0%;
+            }
 
             .personImage{
                 width: 48%;
                 border-radius: 10px;
                 box-shadow: 0px 0px 20px 2px lighten(@textColor,20%);
+                @media@mobile{
+                    width: 87%;
+                }
             }
             .personText{
-                width: 55%;
+                width: 85%;
                 padding: 5%;
+                @media@mobile{
+                    width: 100%;
+                    padding: 10% 0%;
+                    margin-bottom: 0%;
+                }
             }
             #personPicOne{
-                background-image: url(/img/familyInGardenByTree.jpeg);
+                background-image: url(/img/matthewKearneyHeadshot.png);
                 height: 350px;
                 background-position: center;
                 background-size: cover;
                 order: 1;
+
+                @media@mobile {
+                    order: 0;
+                }
             }
             #personPicTwo{
-                background-image: url(/img/womenDrinkingWine.jpeg);
+                background-image: url(/img/emilioHeadshot.png);
                 height: 350px;
                 background-position: center;
                 background-size: cover;
                 order: 0;
+
+                @media@mobile {
+                    order: 0;
+                }
             }
             #personPicThree{
-                background-image: url(/img/handsOfFamily.jpeg);
+                background-image: url(/img/dawnaHeadshot.png);
                 height: 350px;
                 background-position: center;
                 background-size: cover;
                 order: 1;
+
+                @media@mobile {
+                    order: 0;
+                }
             }
             #personPicFour{
-                background-image: url(/img/womanEnjoyingMexican.jpeg);
+                background-image: url(/img/alexHeadshot.png);
                 height: 350px;
                 background-position: center;
                 background-size: cover;
                 order: 0;
+
+                @media@mobile {
+                    order: 0;
+                }
             }
         }
     }
