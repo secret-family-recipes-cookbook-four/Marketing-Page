@@ -150,12 +150,12 @@ p {
   font-size: 1.4rem;
   font-family: 'Montserrat', sans-serif;
   padding: 2%;
-  letter-spacing: 0.25rem;
+  letter-spacing: 0.15rem;
 }
 a {
   font-family: 'Chelsea Market', cursive;
   text-decoration: none;
-  color: #EB5E55;
+  color: #67766D;
 }
 header {
   background-color: #EB5E55;
@@ -185,6 +185,9 @@ header .navContainer h1 {
   color: #F1F0EE;
   width: 63%;
   text-shadow: 0px 0px 5px #220C10;
+}
+header .navContainer h1:hover {
+  transform: scale(1.02);
 }
 @media (max-width:1100px) {
   header .navContainer h1 {
@@ -225,6 +228,9 @@ header .navContainer nav a {
   text-align: center;
   padding: 3.5%;
   text-shadow: 0px 0px 5px #220C10;
+}
+header .navContainer nav a:hover {
+  text-shadow: 0px 0px 10px #220C10;
 }
 header .navContainer nav #navButton {
   border: 2px solid #F1F0EE;
@@ -322,9 +328,11 @@ footer p {
   text-shadow: 0px 0px 2px #54494B;
   background-color: #F1F0EE;
   opacity: 100%;
+  color: #EB5E55;
 }
 .contentContainer .heroImage #heroButton:hover {
   background-color: #ffffff;
+  transform: scale(1.01);
 }
 .contentContainer .featuresContainer {
   width: 90%;
